@@ -45,7 +45,7 @@
 
             <!-- Nav Item - Dashboard -->
             <li class="nav-item active">
-                <a class="nav-link" href="#">
+                <a class="nav-link" href="dasboard.html">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Service</span></a>
             </li>
@@ -63,13 +63,13 @@
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
                     aria-expanded="true" aria-controls="collapseTwo">
                     <i class="bi bi-credit-card-fill"></i>
-                    <span>Others</span>
+                    <span>Components</span>
                 </a>
                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">Components:</h6>
-                        <a class="collapse-item" href="">Pelanggan</a>
-                        <a class="collapse-item" href="">Transaksi</a>
+                        <h6 class="collapse-header">Custom Components:</h6>
+                        <a class="collapse-item" href="">Buttons</a>
+                        <a class="collapse-item" href="">Cards</a>
                     </div>
                 </div>
             </li>
@@ -85,8 +85,8 @@
                     data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Mechanic List:</h6>
-                        <a class="collapse-item" href="mechanic_tdk.html">Working</a>
-                        <a class="collapse-item" href="mechanic_wrk.html">Unemployed</a>
+                        <a class="collapse-item" href="mechanic_wrk.html">Working</a>
+                        <a class="collapse-item" href="mechanic_tdk.html">Unemployed</a>
                     </div>
                 </div>
             </li>
@@ -203,49 +203,41 @@
 
                     <!-- Page Heading -->
                     <div class="d-sm-flex align-items-center justify-content-between">
-                        <h1 class="h3 mb-2 text-gray-800">Car being serviced</h1>
+                        <h1 class="h3 mb-2 text-gray-800">Not Working</h1>
                         <button type="button" class="btn btn-outline-success mb-2" data-bs-toggle="modal"
-                            data-bs-target="#add">Add Cars <i class="bi bi-plus-circle-fill"></i></button>
+                            data-bs-target="#add">Add Mechanic <i class="bi bi-plus-circle-fill"></i></button>
                     </div>
 
-                    <!-- Modal Add Cars -->
+                    <!-- Modal Add Mechanic -->
                     <div class="modal fade" id="add" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
                         aria-labelledby="staticBackdropLabel" aria-hidden="true">
                         <div class="modal-dialog modal-sm">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h3 class="modal-title fs-5" id="staticBackdropLabel">Masukan data mobil</h3>
+                                    <h4 class="modal-title fs-5" id="staticBackdropLabel">Masukan data mechanic</h4>
                                     <button type="button" class="btn btn-danger" data-bs-dismiss="modal"><i
                                             class="bi bi-x-lg"></i></button>
                                 </div>
                                 <div class="modal-body">
                                     <form>
                                         <div class="mb-3">
-                                            <input type="text" class="form-control" placeholder="Plat Nomor"
+                                            <input type="text" class="form-control" placeholder="ID"
                                                 id="recipient-name">
                                         </div>
                                         <div class="mb-3">
-                                            <input type="text" class="form-control" placeholder="Merek"
+                                            <input type="text" class="form-control" placeholder="Name"
                                                 id="recipient-name">
                                         </div>
                                         <div class="mb-3">
-                                            <input type="text" class="form-control" placeholder="Warna"
+                                            <input type="text" class="form-control" placeholder="Time"
                                                 id="recipient-name">
                                         </div>
-                                        <div class="mb-3">
-                                            <input type="text" class="form-control" placeholder="Nama Pelanggan"
-                                                id="recipient-name">
-                                        </div>
-                                        <tr>
-                                            <td><label for="gambar">Gambar:</label></td>
-                                            <td><input type="file" name="gambar"></td>
-                                        </tr>
                                     </form>
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary"
                                         data-bs-dismiss="modal">Close</button>
-                                    <button type="button" class="btn btn-info">Add Car <i
+                                    <button type="button" class="btn btn-info">Add Mechanic <i
                                             class="bi bi-plus-circle-fill"></i></button>
                                 </div>
                             </div>
@@ -255,78 +247,88 @@
                     <!-- Content Row -->
                     <div class="row">
                         <!-- Earnings (Monthly) Card Mechanic -->
-                        <div class="row row-cols-1 row-cols-md-3 g-4" style="padding-bottom: 50px;">
-                            <div class="col">
-                                <div class="card">
-                                    <img src="img/mustang.jpg" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Mustang</h5>
-                                        <p class="card-text">This is a longer card with supporting text below as a
-                                            natural lead-in to additional content. This content is a little bit longer.
-                                        </p>
-                                        <div class="d-flex justify-content-between">
+                        <div class="container" style="padding-bottom: 320px;">
+                            <table class="table">
+                                <thead class="table-info">
+                                    <tr>
+                                        <th scope="col"><i class="bi bi-person-fill"></i></th>
+                                        <th scope="col">ID</th>
+                                        <th scope="col">NAME</th>
+                                        <th scope="col">TIME</th>
+                                        <th scope="col">EDIT</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="table-group-divider">
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td>312210405</td>
+                                        <td>Dito Jawa</td>
+                                        <td>Menganggur</td>
+                                        <td>
                                             <div class="btn-group" role="group" aria-label="Basic mixed styles example">
-                                                <button type="button" class="btn btn-success" data-bs-toggle="modal"
+                                                <button type="button" class="btn btn-info" data-bs-toggle="modal"
                                                     data-bs-target="#change">Change</button>
                                                 <button type="button" class="btn btn-danger" data-toggle="modal"
-                                                    data-target="#deleted"><i class="bi bi-trash3-fill"></i></button>
+                                                    data-target="#deleted">Deleted</button>
                                             </div>
-                                            <button type="button" class="btn btn-warning" data-bs-toggle="modal"
-                                                data-bs-target="#info"><i class="bi bi-info-circle-fill"></i>
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="card">
-                                    <img src="img/doyok.jpg" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">BMW-E30</h5>
-                                        <p class="card-text">This is a longer card with supporting text below as a
-                                            natural lead-in to additional content. This content is a little bit longer.
-                                        </p>
-                                        <div class="d-flex justify-content-between">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">2</th>
+                                        <td>312230294</td>
+                                        <td>Mikael</td>
+                                        <td>Menganggur</td>
+                                        <td>
                                             <div class="btn-group" role="group" aria-label="Basic mixed styles example">
-                                                <button type="button" class="btn btn-success" data-bs-toggle="modal"
+                                                <button type="button" class="btn btn-info" data-bs-toggle="modal"
                                                     data-bs-target="#change">Change</button>
                                                 <button type="button" class="btn btn-danger" data-toggle="modal"
-                                                    data-target="#deleted"><i class="bi bi-trash3-fill"></i></button>
+                                                    data-target="#deleted">Deleted</button>
                                             </div>
-                                            <button type="button" class="btn btn-warning" data-bs-toggle="modal"
-                                                data-bs-target="#info"><i class="bi bi-info-circle-fill"></i>
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="card">
-                                    <img src="img/mobil.jpg" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Toyota Corola</h5>
-                                        <p class="card-text">This is a longer card with supporting text below as a
-                                            natural lead-in to additional content. This content is a little bit longer.
-                                        </p>
-                                        <div class="d-flex justify-content-between">
-                                            <div class="btn-group" role="group" aria-label="Basic mixed styles example">
-                                                <button type="button" class="btn btn-success" data-bs-toggle="modal"
-                                                    data-bs-target="#change">Change</button>
-                                                <button type="button" class="btn btn-danger" data-toggle="modal"
-                                                    data-target="#deleted"><i class="bi bi-trash3-fill"></i></button>
-                                            </div>
-                                            <button type="button" class="btn btn-warning" data-bs-toggle="modal"
-                                                data-bs-target="#info"><i class="bi bi-info-circle-fill"></i>
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
                     </div>
                     <!-- /.container-fluid -->
 
-                    <!-- Modal Deleted Car -->
+                    <!-- Modal Change Mechanic -->
+                    <div class="modal fade" id="change" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-sm">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h3 class="modal-title fs-5" id="staticBackdropLabel">Ubah data mobil</h3>
+                                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal"><i
+                                            class="bi bi-x-lg"></i></button>
+                                </div>
+                                <div class="modal-body">
+                                    <form>
+                                        <div class="mb-3">
+                                            <input type="text" class="form-control" placeholder="ID"
+                                                id="recipient-name">
+                                        </div>
+                                        <div class="mb-3">
+                                            <input type="text" class="form-control" placeholder="Name"
+                                                id="recipient-name">
+                                        </div>
+                                        <div class="mb-3">
+                                            <input type="text" class="form-control" placeholder="Time"
+                                                id="recipient-name">
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-info">Change Information</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Modal Deleted Mechanic -->
                     <div class="modal fade" id="deleted" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
                         aria-hidden="true">
                         <div class="modal-dialog" role="document">
@@ -346,90 +348,6 @@
                         </div>
                     </div>
 
-                    <!-- Modal Change Car -->
-                    <div class="modal fade" id="change" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-                        aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                        <div class="modal-dialog modal-sm">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h3 class="modal-title fs-5" id="staticBackdropLabel">Ubah data mobil</h3>
-                                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal"><i
-                                            class="bi bi-x-lg"></i></button>
-                                </div>
-                                <div class="modal-body">
-                                    <form>
-                                        <div class="mb-3">
-                                            <input type="text" class="form-control" placeholder="Plat Nomor"
-                                                id="recipient-name">
-                                        </div>
-                                        <div class="mb-3">
-                                            <input type="text" class="form-control" placeholder="Merek"
-                                                id="recipient-name">
-                                        </div>
-                                        <div class="mb-3">
-                                            <input type="text" class="form-control" placeholder="Warna"
-                                                id="recipient-name">
-                                        </div>
-                                        <div class="mb-3">
-                                            <input type="text" class="form-control" placeholder="Nama Pelanggan"
-                                                id="recipient-name">
-                                        </div>
-                                        <tr>
-                                            <td><label for="gambar">Gambar:</label></td>
-                                            <td><input type="file" name="gambar"></td>
-                                        </tr>
-                                    </form>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary"
-                                        data-bs-dismiss="modal">Close</button>
-                                    <button type="button" class="btn btn-info">Change Information</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Modal Cars Information -->
-                    <div class="modal fade" id="info" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-                        aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                        <div class="modal-dialog">
-                            <div class=" modal-content">
-                                <div class="modal-header">
-                                    <h3 class="modal-title fs-5" id="staticBackdropLabel">Car Information</h3>
-                                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal"><i
-                                            class="bi bi-x-lg"></i></button>
-                                </div>
-                                <div class="modal-body">
-                                    <table class="table">
-                                        <tr>
-                                            <th scope="col">Pemilik :</th>
-                                            <td>Agus</td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="col">Plat Nomor :</th>
-                                            <td>B 4032 GLZ</td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="col">Montir :</th>
-                                            <td>Mikael</td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="col">Merek mobil :</th>
-                                            <td>Toyota Corola</td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="col">Sparepart :</th>
-                                            <td>Bumper, Ban</td>
-                                        </tr>
-                                    </table>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary"
-                                        data-bs-dismiss="modal">Close</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
 
                 </div>
                 <!-- End of Main Content -->
