@@ -1,27 +1,133 @@
 body {
-    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+  background-color: #f8f9fa;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-/* Navbar */
+nav {
+  background-color: #0dcaf0;
+}
+
 .navbar-brand {
-    height: 40px;
+  color: white;
+  font-size: 24px;
 }
 
-.navbar-brand,
-i {
-    font-size: 25px;
+.navbar-brand i {
+  font-size: 30px;
+  margin-right: 5px;
 }
 
-/* Judul WEBsite */
+.btn-login {
+  margin-right: 15px;
+}
+
 .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 450px;
+  text-align: center;
+  /* margin-top: 100px; */
+  /* background-image: url("img/mekanik.jpg"); /* Ganti dengan path atau URL gambar yang sesuai */
+  /* background-size: cover; */
+  /* background-position: center; */
+  /* padding: 50px; */
+  /* border-radius: 20px; */
+  /* box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); */
 }
 
-.container,
+h1 {
+  color: #dc3545;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
 p {
-    text-align: center;
+  font-size: 18px;
+  color: #6c757d;
+  line-height: 1.6;
+}
+
+.btn-get-started {
+  font-family: Arial;
+  font-size: 20px;
+  padding: 15px 30px;
+  margin-top: 20px;
+  color: white;
+  background-color: #dc3545;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.btn-get-started:hover {
+  background-color: #c82333;
+}
+/* Common styling for both sections */
+.content {
+  max-width: 700px;
+  margin: 20px auto;
+  padding: 20px;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* Styling for Visi section */
+.visi {
+  background-color: #e0e0e0; /* Example background color */
+  border: 1px solid #ddd; /* Example border */
+  border-radius: 5px; /* Example border radius */
+  padding: 10px; /* Example padding */
+}
+
+/* Styling for Misi section */
+.misi {
+  background-color: #e0e0e0; /* Example background color */
+  border: 1px solid #ccc; /* Example border */
+  border-radius: 5px; /* Example border radius */
+  padding: 10px; /* Example padding */
+}
+
+/* Add more styling as needed */
+/* Add this to your existing style.css or within a <style> tag in the head */
+.center {
+  text-align: center;
+}
+
+.small {
+  font-size: 14px;
+}
+.facility {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.facility-item {
+  flex: 0 0 45%; /* Each facility item takes up 45% of the container */
+  max-width: 400px;
+  margin: 10px;
+  text-align: center;
+}
+
+.facility-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+.servis {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.servis-item {
+  flex: 0 0 45%; /* Each facility item takes up 45% of the container */
+  max-width: 400px;
+  margin: 10px;
+  text-align: center;
+}
+
+.servis-item img {
+  width: 70%;
+  height: auto;
+  border-radius: 8px;
 }
