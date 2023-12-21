@@ -1,15 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet" />
+
+    <!-- style.css -->
     <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Icon Boostrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"
+    />
     <title>Fasilitas Car Repair</title>
+    <link rel="shortcut icon" href="img/car-front.png" />
   </head>
   <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-light bg-white">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <i class="bi bi-car-front"></i>
+          CAR<span style="color: black"> Repair</span>
+        </a>
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <!-- Dropdown menu for About section -->
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdownAbout"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              About
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownAbout">
+              <li>
+                <a class="dropdown-item" href="About.html"
+                  >Fasilitas Car Repair</a
+                >
+                <a class="dropdown-item" href="About1.html">Pelayanan</a>
+                <a class="dropdown-item" href="About2.html">Fasilitas</a>
+              </li>
+              <!-- Add more dropdown items if needed -->
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact Us</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <a
+            href="login.html"
+            target="_blank"
+            class="btn btn-lg btn-outline-info btn-login"
+            >Login</a
+          >
+        </form>
+      </div>
+    </nav>
+    <!-- Akhir Navbar -->
     <!-- Header Section -->
     <header class="header">
-      <h1 class="center">Fasilitas Car Repair</h1>
+      <h1>Fasilitas Car Repair</h1>
     </header>
 
     <!-- Fasilitas Section -->
@@ -63,5 +125,8 @@
         </p>
       </div>
     </section>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="js/bootstrap.js"></script>
+    <script src="js/popper.min.js"></script>
   </body>
 </html>
